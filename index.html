@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For You 💗</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#071326;
+  font-family:Arial,"Noto Sans Myanmar",sans-serif;
+  color:white;
+  overflow:hidden;
+}
+
+.card{
+  width:88%;
+  max-width:380px;
+  padding:30px 22px;
+  text-align:center;
+  border-radius:28px;
+  background:rgba(28,42,68,.88);
+  box-shadow:0 15px 45px rgba(0,0,0,.45);
+  border:1px solid rgba(255,255,255,.08);
+}
+
+.photo{
+  width:125px;
+  height:125px;
+  margin:0 auto 18px;
+  border-radius:25px;
+  object-fit:cover;
+  display:block;
+}
+
+h1{
+  margin:8px 0 12px;
+  font-size:22px;
+  line-height:1.7;
+  color:#8cff9a;
+}
+
+p{
+  font-size:13px;
+  line-height:1.8;
+  color:#ddd;
+}
+
+.tip{
+  margin:18px 0;
+  color:#ffe95c;
+  font-size:12px;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:30px;
+  background:#263957;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+button:active{
+  transform:scale(.97);
+}
+
+#message{
+  display:none;
+  margin-top:22px;
+  animation:show .7s ease;
+}
+
+#message h2{
+  color:#ff9fcb;
+  font-size:22px;
+}
+
+#message p{
+  font-size:15px;
+  line-height:2;
+}
+
+@keyframes show{
+  from{
+    opacity:0;
+    transform:translateY(15px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <!-- ပုံကို နောက်မှပြောင်းလို့ရပါတယ် -->
+  <img
+    class="photo"
+    src="https://i.imgur.com/8Km9tLL.png"
+    alt="Cute picture"
+  >
+
+  <h1>
+    အရမ်းချစ်ရတဲ့သူအတွက် 💗<br>
+    ဒီစာလေးကိုဖတ်ပေးနော် ✨
+  </h1>
+
+  <p>
+    Target မဟုတ်ဘူးနော် 😝<br>
+    မင်းအတွက် သီးသန့်လုပ်ထားတာပါ 💕
+  </p>
+
+  <div class="tip">
+    (Tip: အောက်ကခလုတ်လေးကို နှိပ်ကြည့်ပါ 👀)
+  </div>
+
+  <button onclick="showMessage()">
+    နှိပ်မယ် 💗
+  </button>
+
+  <div id="message">
+    <h2>Surprise! 💕</h2>
+    <p>
+      မင်းကို ပြောချင်တာလေးတစ်ခုရှိတယ်...<br><br>
+      ဘယ်လောက်ပဲဝေးဝေး<br>
+      မင်းကို သတိရနေမယ်နော် 🥺❤️
+    </p>
+  </div>
+
+</div>
+
+<script>
+function showMessage(){
+  document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
